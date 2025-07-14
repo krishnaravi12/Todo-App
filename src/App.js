@@ -3,14 +3,19 @@ import './App.css';
 import AddTodo from './components/AddTodo';
 import SearchTodo from './components/SearchTodo';
 import DeleteTodo from './components/DeleteTodo';
+import ViewAll from './components/ViewAll';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <AddTodo/>
-      <SearchTodo/>
-      <DeleteTodo/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={  <AddTodo/>  }/>
+      <Route path='/search' element={  <SearchTodo/>  }/>
+      <Route path='/delete' element={  <DeleteTodo/>  }/>
+      <Route path='/view' element={  <ViewAll/>  }/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
