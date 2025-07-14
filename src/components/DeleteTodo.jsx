@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SearchTodo = () => {
+const DeleteTodo = () => {
   return (
     <div>
         <div className="container">
@@ -12,7 +12,7 @@ const SearchTodo = () => {
                             <input type="text" className="form-control" />
                         </div>
                         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <div className="button btn btn-success">Search</div>
+                            <div className="button btn btn-danger">Delete</div>
                         </div>
                     </div>
                 </div>
@@ -22,4 +22,4 @@ const SearchTodo = () => {
   )
 }
 
-export default SearchTodo
+export default DeleteTodo
